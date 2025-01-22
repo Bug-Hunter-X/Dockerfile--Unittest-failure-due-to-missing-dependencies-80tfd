@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: forgetting to install project dependencies before running tests. The initial `bug.Dockerfile` only installs Python and pip, resulting in test failures.  The solution, `solution.Dockerfile`, demonstrates the correct approach by adding a `pip install -r requirements.txt` step to install project dependencies.
